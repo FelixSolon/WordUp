@@ -8,7 +8,7 @@
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17",
     "react-transition-group": "^2.2.1",
-    "reactstrap": "^4.8.0"
+    "reactstrap": "https://registry.npmjs.org/reactstrap/-/reactstrap-5.0.0-alpha.4.tgz"
   },
   "scripts": {
     "start": "react-scripts start",
