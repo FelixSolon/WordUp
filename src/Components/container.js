@@ -160,7 +160,7 @@ constructor(props) {
         <Collapse isOpen={!this.state.collapsed} navbar>
           <Nav navbar className="Nav">
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/components/">ComponentsFooooooooo</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>

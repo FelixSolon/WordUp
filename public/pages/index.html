@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WordUp</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Bootstrap -->
-   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <!-- Style to fix the issue of text extending past panel length -->
-    
-   </head>
-  
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--Bootstrap 3.3.7 stuff....-->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!--end of bootstrap 3 stuff-->
+
+
+  <title>WordUp</title>
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <!-- Style to fix the issue of text extending past panel length -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
 
 
 
   <div class="wrapper">
-            <!-- Sidebar Holder -->
+    <!-- Sidebar Holder -->
     <nav id="sidebar">
       <div class="sidebar-header">
-                    <h3>
-                    <img src="worduplogo1.png" style="
-                        width: 150px;
-                        "></h3>
+        <h3>
+          <img src="worduplogo1.png" style="
+          width: 150px;
+          "></h3>
         </div>
 
         <ul class="list-unstyled components">
-            <p>+</p>
-            <li class="active">
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li><a href="profile.html">Profile</a></li>
-                    
-                </ul>
-            </li>
-            <li><a href="about.html"></a><a href="#link-text" style="color: #fff;">About</a> <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" style="color: #fff;">Games</a>
-              <ul class="collapse list-unstyled" id="pageSubmenu">
-                      <li><a href="hangman.html">Hangman</a></li>
-                      <li><a href="flashcards.html">Flashcards</a></li>
-                      <li><a href="quizzes.html">Quizzes</a></li>
-                </ul>
-            </li>
-                    
-            <li class="contacttext">
-                <a href="contact.html" style="color: #fff;">Contact</a>
-            </li>
-        </ul>
-    
-               
-      </nav>
-</div>
-            <!-- Page Content Holder -->
-    <div id="content">
 
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <img src="worduptitle.png" style="
-                        width: 85px;
-                        ">
 
-                        <div class="navbar-header">
-                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" style="
-                               background-color: #347B98;">
-                                <i class="glyphicon glyphicon-align-left"></i>
-                                <span>=</span>
-                            </button>
-                        </div>
+          <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" style="color:#fff;"><h3>Home</h3></a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li><a href="profile.html"><h5>Profile</h5></a></li>
+            </ul>
+          </li>
+
+          <li>
+           <a href="about.html" style="color: #fff;"><h3>About</h3></a> 
+           <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" style="color: #fff;"><h3>Games</h3></a>
+           <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li><a href="hangman.html"><h5>Hangman</h5></a></li>
+            <li><a href="flashcards.html"><h5>Flashcards</h5></a></li>
+            <li><a href="quizzes.html"><h5>Quizzes</h5></a></li>
+          </ul>
+        </li>
+
+        <li class="contacttext">
+          <a href="contact.html" style="color: #fff;"><h3>Contact</h3></a>
+        </li>
+      </ul>
+
+
+    </nav>
+  </div>
+  <!-- Page Content Holder -->
+  <div id="content">
+    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" style="
+    background-color: #347B98; float: right;
+    margin: 10px 15px 15px 10px;">
+    <i class="glyphicon glyphicon-menu-hamburger"></i>
+  </button>
+  <!-- <nav class="navbar navbar-default">-->
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <img src="worduptitle.png" class="img-responsive" style="
+        width: 220px;
+        ">                    
+      </div>
+    </div>
+
 
 <!--
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -77,59 +89,58 @@
                                 <li><a href="#">Page</a></li>
                             </ul>
                         </div>
--->
-                    </div>
-                </nav>
-                
-                
-                           
-
-<!--                     welcome-->
+                      -->
 
 
 
 
 
-<!--                     welcome-->
-                           
-                            
-<!--                /////////////////////-->
+                      <!--                     welcome-->
 
-           
-           
-           
-            <div class="login-page">
-  <div class="form">
-    <form class="register-form">
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
-      <button>create</button>
-      <p class="message">Already registered? <a href="#">Sign In</a></p>
-    </form>
-    <p style="color: #B84814; font-size: 20px;">Login</p>
-    <form class="login-form">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-      <button>login</button>
-      <p class="message">Not registered? <a href="#">Create an account</a></p>
-    </form>
-  </div>
-</div>    
-                 
+
+
+
+
+                      <!--                     welcome-->
+
+
+                      <!--                /////////////////////-->
+
+
+
+
+                      <div class="login-page">
+                        <div class="form">
+                          <form class="register-form">
+                            <input type="text" placeholder="name"/>
+                            <input type="password" placeholder="password"/>
+                            <input type="text" placeholder="email address"/>
+                            <button>create</button>
+                            <p class="message">Already registered? <a href="#">Sign In</a></p>
+                          </form>
+                          <p style="color: #B84814; font-size: 20px;">Login</p>
+                          <form class="login-form">
+                            <input type="text" placeholder="username"/>
+                            <input type="password" placeholder="password"/>
+                            <button>login</button>
+                            <p class="message">Not registered? <a href="#">Create an account</a></p>
+                          </form>
+                        </div>
+                      </div>    
+
 <!--               ///////////////////////
 
                        SIGN UP 
                             
                 /////////////////////
--->
-               
-                
-                 <br>
-                  <br>
-                  
-                   <div class="background-modal">
-                <h2 class="paragraph" style="color: #fff; font-weight: 300" >Collapsible Sidebar Using Bootstrap 3</h2>
+              -->
+
+
+              <br>
+              <br>
+
+              <div class="background-modal">
+                <h2 class="paragraph" style="color: #fff; font-weight: 300" >Expand your knowledge with WordUp!! Are you ready to level up?</h2>
                 <p class="paragraphs" style="color: #fff; font-weight: 150">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -137,53 +148,53 @@
 
                 
 
-               
+
+              </div>
             </div>
-        </div>
-    
 
 
 
 
 
-        <!-- jQuery CDN -->
-         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-         <!-- Bootstrap Js CDN -->
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-         <script type="text/javascript">
+            <!-- jQuery CDN -->
+            <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+            <!-- Bootstrap Js CDN -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+            <script type="text/javascript">
              $(document).ready(function () {
-                 $('#sidebarCollapse').on('click', function () {
-                     $('#sidebar').toggleClass('active');
-                 });
+               $('#sidebarCollapse').on('click', function () {
+                 $('#sidebar').toggleClass('active');
+               });
              });
-       
-       
-       /* Registration/Login Form */
-       $('.message a').click(function(){
-   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-});
-       
-       /* SCROLL */
-       function smoothScroll(target, time) {
-  var margin = ($('#main-header').outerHeight() - 1);
-  if (!time) { time = '1000'; }
 
-  if (target === 'toTop') {
-    $('html,body').animate({
-      scrollTop: 0
-    }, time);
-  }
-  else {
-    $('html,body').animate({
-      scrollTop: target.offset().top - margin
-    }, time);
-  }
-}
+
+             /* Registration/Login Form */
+             $('.message a').click(function(){
+               $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+             });
+
+             /* SCROLL */
+             function smoothScroll(target, time) {
+              var margin = ($('#main-header').outerHeight() - 1);
+              if (!time) { time = '1000'; }
+
+              if (target === 'toTop') {
+                $('html,body').animate({
+                  scrollTop: 0
+                }, time);
+              }
+              else {
+                $('html,body').animate({
+                  scrollTop: target.offset().top - margin
+                }, time);
+              }
+            }
 
 // SCROLL DOWN ARROR BUTTON
 
-  function smoothScroll(target, time) {
+function smoothScroll(target, time) {
   var margin = ($('#main-header').outerHeight() - 1);
   if (!time) { time = '1000'; }
 
@@ -201,16 +212,16 @@
 
 // SCROLL DOWN ARROW BUTTON
 
-  var count = 0;
+var count = 0;
 
-  $('#scroll').on("click", function(){
+$('#scroll').on("click", function(){
 
-    var sections = $('section');
+  var sections = $('section');
 
     //+55px to offset the margin-top
     var $this = $(this),
-      top = ($this.offset().top - $(window).scrollTop()) + 55,
-      right = $this.offset().right;
+    top = ($this.offset().top - $(window).scrollTop()) + 55,
+    right = $this.offset().right;
 
 
     $this.css({
@@ -241,12 +252,12 @@
       }
       smoothScroll(target);
     }
-  
+
     count++;
 
     $(this).find('.arrow-bounce').removeClass('arrow-bounce');
 
   });
-         </script>
+</script>
 </body>
 </html>
