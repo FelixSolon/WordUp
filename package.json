@@ -3,12 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.17.1",
     "bootstrap": "^3.3.7",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17",
     "react-transition-group": "^2.2.1",
-    "reactstrap": "https://registry.npmjs.org/reactstrap/-/reactstrap-5.0.0-alpha.4.tgz"
+    "reactstrap": "https://registry.npmjs.org/reactstrap/-/reactstrap-5.0.0-alpha.4.tgz",
+    "request": "^2.83.0",
+    "sequelize": "^4.31.0",
+    "sequelize-cli": "^3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
