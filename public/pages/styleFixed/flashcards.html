@@ -19,7 +19,7 @@
   <!-- Bootstrap -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <!-- Style to fix the issue of text extending past panel length -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">   
 </head>
 
 <body>
@@ -38,16 +38,15 @@
 
         <ul class="list-unstyled components">
           <li class="active">
-            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><h3>Home</h3></a>
+            <a href="index.html" id="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><h3>Home</h3></a>
             <ul class="collapse list-unstyled" id="homeSubmenu">
               <li><a href="profile.html"><h5>Profile</h5></a></li>
-
             </ul>
           </li>
           <li><a href="about.html" href="#link-text" style="color: #fff;"><h3>About</h3></a> <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" style="color: #fff;"><h3>Games</h3></a>
             <ul class="collapse list-unstyled" id="pageSubmenu">
               <li><a href="hangman.html"><h5>Hangman</h5></a></li>
-              <li><a href="flashcards.html"><h5>Flashcards</h5></a></li>
+              <li><a href="flashcards.html"><h5>Giphy</h5></a></li>
               <li><a href="quizzes.html"><h5>Quizzes</h5></a></li>
             </ul>
           </li>
@@ -78,72 +77,87 @@
       </div>
 
 
-      <article class="flex-container">
-        <section class="flex" id="finn">
+<div class="container-fluid">
+  <div class="row-fluid" style="margin-bottom: 20px">
+      <!--<article class="flex-container">-->
+        <section class="flex" class="flashcards-responsive" id="finn">
           <div>
             <figure>
-              <img src="hangman.png" style="width: 118px;" alt="Finn the human" />
-              <figcaption>Hangman</figcaption>
+              <img src="book.png" style="width: 118px;" alt="Finn the human" />
+              <figcaption>Flashcards</figcaption>
             </figure>
-            <p style="color: #FC600A">Play Hangman to acquire new words and see the same giphys you see on your smartphones as hints.</p>
+            <p>Want to level up? Here's how. Get the words right and prove how much you know.</p>
             <a href="http://adventuretime.wikia.com/wiki/Finn" style="color: #341809;">Click On Game</a>
           </div>
         </section>
-        <section class="flex" id="jake">
-          <div>
-            <figure>
-              <!-- The grid: three columns -->
-              <div class="row">
-                <div class="column" onclick="openTab('b1');" style="background:#999;">GIF</div>
-                <div class="column" onclick="openTab('b2');" style="background:#000000;">GIF</div>
-                <div class="column" onclick="openTab('b3');" style="background:#999;">GIF</div>
-              </div>
 
-              <!-- The expanding grid (hidden by default) -->
-              <div id="b1" class="containerTab" style="display:none;background:green">
-                <!-- If you want the ability to close the container, add a close button -->
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-                <h2>Box 1</h2>
-                <p>Lorem ipsum..</p>
-              </div>
+<!--
+      <section class="flex" id="jake">
+        <div>
+          <figure>
+          -->
+          <!-- The grid: three columns -->
+<!--
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:#999;">GIF</div>
+  <div class="column" onclick="openTab('b2');" style="background:#000000;">GIF</div>
+  <div class="column" onclick="openTab('b3');" style="background:#999;">GIF</div>
+</div>
+-->
 
-              <div id="b2" class="containerTab" style="display:none;background:#000000">
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-                <h2>Box 2</h2>
-                <p>Lorem ipsum..</p>
-              </div>
+<!-- The expanding grid (hidden by default) -->
+<!--
+<div id="b1" class="containerTab" style="display:none;background:green">
+   If you want the ability to close the container, add a close button 
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Box 1</h2>
+  <p>Lorem ipsum..</p>
+</div>
+-->
 
-              <div id="b3" class="containerTab" style="display:none;background:red">
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-                <h2>Box 3</h2>
-                <p>Lorem ipsum..</p>
-              </div>
-            </figure>
+<!--
+<div id="b2" class="containerTab" style="display:none;background:#000000">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Box 2</h2>
+  <p>Lorem ipsum..</p>
+</div>
 
-          </div>
-        </section>
-        
-      </article>
-      <!--      FOOTER-->
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Box 3</h2>
+  <p>Lorem ipsum..</p>
+</div>
+-->
+<!--          </figure>-->
+
+<!--
+        </div>
+      </section>
+    -->
+
+<!--0  </article>-->
+</div>
+</div>
+  <!--      FOOTER-->
 
 
-      <!--      footer-->
+  <!--      footer-->
 
 
-      <!-- jQuery CDN -->
-      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-      <!-- Bootstrap Js CDN -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <!-- Bootstrap Js CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-      <script type="text/javascript">
-       $(document).ready(function () {
-         $('#sidebarCollapse').on('click', function () {
-           $('#sidebar').toggleClass('active');
-         });
-       });
-       /* GRID */
+  <script type="text/javascript">
+   $(document).ready(function () {
+     $('#sidebarCollapse').on('click', function () {
+       $('#sidebar').toggleClass('active');
+     });
+   });
+   /* GRID */
 			 // Hide all elements with class="containerTab", except for the one that matches the clickable grid column
-      function openTab(tabName) {
+       function openTab(tabName) {
         var i, x;
         x = document.getElementsByClassName("containerTab");
         for (i = 0; i < x.length; i++) {
